@@ -1,7 +1,51 @@
 package com.sollink.docu.scripting
 
-class XML2UML {
-String file_name
+import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import com.sollink.docu.dao.MemberDAO;
+import com.sollink.docu.dao.CompoundDAO;
+import com.sollink.docu.domain.Compound;
+
+class XML2UML {	
+	public void setCompoundDAO(CompoundDAO dao) {
+		compoundDAO= dao;
+	}
+	
+	private static final Logger logger= Logger.getLogger(XML2UML.class)
+	
+	public boolean proc(String file_name, CompoundDAO compoundDAO) {
+		def xml_file = new File(file_name).canonicalPath
+		logger.debug("XML file name ${xml_file}")
+		
+//		Compound Ã³¸®
+
+		def doxygen = new XmlParser().parse(new File(xml_file))
+		def compounddef = doxygen.compounddef[0]
+		
+		Compound c = new Compound();
+		c.setId(compounddef.'@id');
+		c.setKind(compounddef.'@kind');
+		c.setProt(compounddef.'@prot');
+		
+		logger.debug("Compound Creation ${c.getId()}")
+		
+		Compound exist = compoundDAO.selectByPrimaryKey(compounddef.'@id');
+		if (exist == null) {
+			compoundDAO.insert(c)
+			logger.debug("Insert")
+		}
+		else {
+			compoundDAO.updateByPrimaryKey(c);
+			logger.debug("Update")
+		}
+		
+		return true;
+	}
+	
+	String file_name
+	
+	public XML2UML(){
+	}
 	
 	public XML2UML(String file_name) {
 		this.file_name = file_name

@@ -8,9 +8,11 @@ import org.springframework.test.context.transaction.TransactionConfiguration;
 import org.springframework.test.context.transaction.TransactionalTestExecutionListener;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.sollink.docu.dao.CompoundDAO;
 import com.sollink.docu.dao.MemberDAO;
 import com.sollink.docu.domain.Member;
 import com.sollink.docu.domain.MemberExample;
+import com.sollink.docu.scripting.XML2UML;
 
 @ContextConfiguration(locations = {
 		"file:./applicationContext.xml",
@@ -22,21 +24,16 @@ import com.sollink.docu.domain.MemberExample;
 public class AppTest extends AbstractJUnit38SpringContextTests{
 	
 	@Autowired
-	private MemberDAO mdao;
+	private CompoundDAO compoundDAO;
 	
-	public void test_first() {
-		Member m = new Member();
-		m.setId("babo");
-	
-		mdao.insert(m);
-		MemberExample e = new MemberExample();
-		e.createCriteria().andIdEqualTo("babo");
-		
-		Member m2 = mdao.selectByExample(e).get(0);
-		assertNotNull(m2);
-	}
+	@Autowired
+	private MemberDAO memberDAO;
 	
 	public void test_succ() {
-		assertTrue(true);
+		String file_name = "classcom_1_1sk_1_1ucity_1_1dv_1_1admin_1_1insp_1_1web_1_1_insp_item_controller.xml";
+		XML2UML gen = new XML2UML("");
+		
+		boolean r= gen.proc(file_name, compoundDAO);
+		assertTrue(r);
 	}
 }
