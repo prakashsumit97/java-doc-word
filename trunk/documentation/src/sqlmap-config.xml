@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMapConfig PUBLIC "-//iBATIS.com//DTD SQL Map Config 2.0//EN"
+"http://www.ibatis.com/dtd/sql-map-config-2.dtd">
+<!--Always ensure to use the correct XML header as above! -->
+<sqlMapConfig>
+	<!--These settings control SqlMapClient configuration details, primarily to do with transaction
+		management. They are all optional (more detail later in this document). -->
+	<settings cacheModelsEnabled="true" enhancementEnabled="true" lazyLoadingEnabled="true" maxRequests="32"
+		maxSessions="10" maxTransactions="5" useStatementNamespaces="true" />
+	<!-- SqlMap xml을 등록한다. -->
+	<sqlMap resource="com/sollink/docu/sql/COMPOUND_SqlMap.xml" />
+	<sqlMap resource="com/sollink/docu/sql/MEMBER_SqlMap.xml" />
+</sqlMapConfig>

@@ -1,0 +1,21 @@
+#신규 DB 
+- skt_documentation
+- DB 시작
+- table population (HSQL Standalone Server 모드)
+
+#abatorConfig_template.xml
+- jdbcConnection 설정
+- javaModelGenerator/sqlMapGenerator/daoGenerator 설정
+- table 설정
+- 생성 (iBatis 플러그인이 있어야 함)
+
+#sqlmap-config.xml
+- 생성된 SQL map 파일들을 등록
+- sqlmap-config.xml 파일은 applicationContext*.xml 파일을 통해서 연계됨
+
+# build.properties
+- JDBC 설정
+- 이 파일은 applicationContext-ibatis.xml에서 사용됨
+
+#applicationContext.xml 설정
+- 생성된 DAOImpl들을 bean으로 등록

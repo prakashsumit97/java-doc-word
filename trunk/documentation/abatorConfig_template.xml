@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE abatorConfiguration PUBLIC "-//Apache Software Foundation//DTD Abator for iBATIS Configuration 1.0//EN" "http://ibatis.apache.org/dtd/abator-config_1_0.dtd" >
+<!-- abator는 Java class 의 merge를 위해 Eclipse를 통해서만 실행한다. 
+	java class의 내용 중 수정한 항목에 대해 javadoc의 @abatorgenerated 를 만드시 삭제한다. 
+-->
+<abatorConfiguration>
+	<abatorContext generatorSet="Java5">
+		<property name="suppressTypeWarnings" value="true" />
+		<!-- 실제 DB 커넥션 정보를 기입한다. eclipse에서 수행하는 경우 property 설정이 되지 않는다. -->
+		<!-- 
+			<jdbcConnection driverClass="${jdbc.driver}" connectionURL="${jdbc.url}" userId="${jdbc.user}"
+			password="${jdbc.password}">
+			<classPathEntry location="${jdbc.driver.jar}" />
+			</jdbcConnection>
+		-->
+		
+		<jdbcConnection driverClass="org.hsqldb.jdbcDriver" connectionURL="jdbc:hsqldb:hsql://localhost/skt_documentation"
+			userId="sa" password="">
+			<classPathEntry location="c:/eclipse/workspace/documentation/lib/hsqldb.jar" />
+		</jdbcConnection>
+		
+		<javaModelGenerator targetPackage="com.sollink.docu.domain" targetProject="documentation/src"/>
+		<sqlMapGenerator targetPackage="com.sollink.docu.sql" targetProject="documentation/src" />
+		<daoGenerator targetPackage="com.sollink.docu.dao" targetProject="documentation/src" type="SPRING" />
+		
+		<table tableName="compound" domainObjectName="Compound"> </table>
+		<table tableName="member" domainObjectName="Member"></table>
+		<!-- 테이블  정보를 입력한다. 
+			* 반드시 현재 작업 중인 table 만을 기입하도록 한다. 다른 테이블은 삭제 혹은 주석처리한다.
+			* abatorConfig_template.xml 을 abatorConfig.xml 로 rename하여 작업한다.
+			* abatorConfig.xml 은 commit 하지 않는다.
+			
+			domainObjectName: 테이블명과 java class 명이 다를 경우 생성될 java class명을 입력한다.
+			generatedKey: insert 시 고유 식별자를 DB로부터 얻어와야 하는 경우 입력한다.
+			column: 고유 식별자가 입력될 컬럼
+			identity: 식별자 컬럼임을 명시
+			type: (pre|post) oracle은 미리 sequence 를 따와야 하므로 pre로 설정해야 한다.
+			sqlStatement: sequence를 따기 위한 sql문
+		-->
+		<!--  다음은 oracle 에서의 예시이다. -->
+		<!-- 
+			<table tableName="PRODUCT" domainObjectName="User">
+			<generatedKey column="id" identity="true" type="pre" sqlStatement="select product_seq.nextval from dual" />
+			</table>
+		-->
+		<!-- 
+		<table tableName="PRODUCT" enableSelectByExample="false" enableDeleteByExample="false"
+            enableCountByExample="false" enableUpdateByExample="false" domainObjectName="BaseProduct">
+			<generatedKey column="id" identity="true" type="post" sqlStatement="HSQLDB" />
+		</table>
+		<table tableName="PRODUCT_CATEGORY" enableSelectByExample="false" enableDeleteByExample="false"
+            enableCountByExample="false" enableUpdateByExample="false" domainObjectName="BaseProductCategory">
+			<generatedKey column="id" identity="true" type="post" sqlStatement="HSQLDB" />
+		</table>
+		 -->
+
+	</abatorContext>
+</abatorConfiguration>

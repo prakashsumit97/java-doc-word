@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classcom_1_1sk_1_1ucity_1_1dv_1_1admin_1_1insp_1_1web_1_1_insp_item_controller" kind="class" prot="public">
+    <compoundname>com::sk::ucity::dv::admin::insp::web::InspItemController</compoundname>
+    <basecompoundref refid="classcom_1_1sk_1_1ucity_1_1common_1_1abstracts_1_1_abstract_controller" prot="public" virt="non-virtual">com.sk.ucity.common.abstracts.AbstractController</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1sk_1_1ucity_1_1dv_1_1admin_1_1insp_1_1web_1_1_insp_item_controller_1585217823cc0753d0c91c5b75a0b6213" prot="private" static="yes" mutable="no">
+        <type>final Logger</type>
+        <definition>final Logger com.sk.ucity.dv.admin.insp.web.InspItemController.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <initializer> Logger.getLogger(InspItemController.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The Constant logger. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/eclipse/workspace/ucity_dev/src/main/com/sk/ucity/dv/admin/insp/web/InspItemController.java" line="40" bodyfile="C:/eclipse/workspace/ucity_dev/src/main/com/sk/ucity/dv/admin/insp/web/InspItemController.java" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1sk_1_1ucity_1_1dv_1_1admin_1_1insp_1_1web_1_1_insp_item_controller_1c4cd26823b22495dab4606e67452f167" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacecom_1_1sk_1_1ucity_1_1dv_1_1admin_1_1insp_1_1_insp_item_service" kindref="compound">InspItemService</ref></type>
+        <definition>InspItemService com.sk.ucity.dv.admin.insp.web.InspItemController.inspItemService</definition>
+        <argsstring></argsstring>
+        <name>inspItemService</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The <ref refid="namespacecom_1_1sk_1_1ucity_1_1dv_1_1admin_1_1insp" kindref="compound">insp</ref> item service. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/eclipse/workspace/ucity_dev/src/main/com/sk/ucity/dv/admin/insp/web/InspItemController.java" line="44" bodyfile="C:/eclipse/workspace/ucity_dev/src/main/com/sk/ucity/dv/admin/insp/web/InspItemController.java" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1sk_1_1ucity_1_1dv_1_1admin_1_1insp_1_1web_1_1_insp_item_controller_1018eee3dc15cd4bc4f3d438c406c9228" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="interfacecom_1_1sk_1_1ucity_1_1dv_1_1admin_1_1insp_1_1_insp_item_service" kindref="compound">InspItemService</ref></type>
+        <definition>InspItemService com.sk.ucity.dv.admin.insp.web.InspItemController.getInspItemService</definition>
+        <argsstring>()</argsstring>
+        <name>getInspItemService</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the <ref refid="namespacecom_1_1sk_1_1ucity_1_1dv_1_1admin_1_1insp" kindref="compound">insp</ref> item service.</para><para><simplesect kind="return"><para>the inspItemService </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/eclipse/workspace/ucity_dev/src/main/com/sk/ucity/dv/admin/insp/web/InspItemController.java" line="58" bodyfile="C:/eclipse/workspace/ucity_dev/src/main/com/sk/ucity/dv/admin/insp/web/InspItemController.java" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sk_1_1ucity_1_1dv_1_1admin_1_1insp_1_1web_1_1_insp_item_controller_16a4d859f7e728cfea4271dcfb520729d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.sk.ucity.dv.admin.insp.web.InspItemController.setInspItemService</definition>
+        <argsstring>(InspItemService inspItemService)</argsstring>
+        <name>setInspItemService</name>
+        <param>
+          <type><ref refid="interfacecom_1_1sk_1_1ucity_1_1dv_1_1admin_1_1insp_1_1_insp_item_service" kindref="compound">InspItemService</ref></type>
+          <declname>inspItemService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the <ref refid="namespacecom_1_1sk_1_1ucity_1_1dv_1_1admin_1_1insp" kindref="compound">insp</ref> item service.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inspItemService</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the inspItemService to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/eclipse/workspace/ucity_dev/src/main/com/sk/ucity/dv/admin/insp/web/InspItemController.java" line="67" bodyfile="C:/eclipse/workspace/ucity_dev/src/main/com/sk/ucity/dv/admin/insp/web/InspItemController.java" bodystart="67" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sk_1_1ucity_1_1dv_1_1admin_1_1insp_1_1web_1_1_insp_item_controller_161f4fe727d16a43b4f60ef4919418e81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sk.ucity.dv.admin.insp.web.InspItemController.list</definition>
+        <argsstring>(HttpServletRequest request,@RequestParam(required=false, value=&quot;condition&quot;) String condition,@RequestParam(required=false, value=&quot;search&quot;) String search,@RequestParam(required=false, value=&quot;currentPage&quot;) Integer currentPage, Map modelMap)</argsstring>
+        <name>list</name>
+        <param>
+          <type>HttpServletRequest</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>@RequestParam(required=false, value=&quot;condition&quot;) String</type>
+          <declname>condition</declname>
+        </param>
+        <param>
+          <type>@RequestParam(required=false, value=&quot;search&quot;) String</type>
+          <declname>search</declname>
+        </param>
+        <param>
+          <type>@RequestParam(required=false, value=&quot;currentPage&quot;) Integer</type>
+          <declname>currentPage</declname>
+        </param>
+        <param>
+          <type>Map</type>
+          <declname>modelMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>점검항목 List.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>condition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the condition </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>search</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the search </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>currentPage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the current page </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the request </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>modelMap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the model map</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the model and view </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/eclipse/workspace/ucity_dev/src/main/com/sk/ucity/dv/admin/insp/web/InspItemController.java" line="95" bodyfile="C:/eclipse/workspace/ucity_dev/src/main/com/sk/ucity/dv/admin/insp/web/InspItemController.java" bodystart="90" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sk_1_1ucity_1_1dv_1_1admin_1_1insp_1_1web_1_1_insp_item_controller_140336bed3f4b7775c42d1721f018defe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sk.ucity.dv.admin.insp.web.InspItemController.view</definition>
+        <argsstring>(HttpServletRequest request,@RequestParam(&quot;id&quot;) String id, Map modelMap)</argsstring>
+        <name>view</name>
+        <param>
+          <type>HttpServletRequest</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>@RequestParam(&quot;id&quot;) String</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>Map</type>
+          <declname>modelMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>점검항목 View.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the id </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the model</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the model and view </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/eclipse/workspace/ucity_dev/src/main/com/sk/ucity/dv/admin/insp/web/InspItemController.java" line="138" bodyfile="C:/eclipse/workspace/ucity_dev/src/main/com/sk/ucity/dv/admin/insp/web/InspItemController.java" bodystart="135" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1sk_1_1ucity_1_1dv_1_1admin_1_1insp_1_1web_1_1_insp_item_controller_17ecd2e8365606d5f710e6f489b298bf9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.sk.ucity.dv.admin.insp.web.InspItemController.delete</definition>
+        <argsstring>(HttpServletRequest request,@RequestParam(&quot;id&quot;) String id, Map modelMap)</argsstring>
+        <name>delete</name>
+        <param>
+          <type>HttpServletRequest</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>@RequestParam(&quot;id&quot;) String</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>Map</type>
+          <declname>modelMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>점검항목 Delete.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the id </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the model</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the string </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/eclipse/workspace/ucity_dev/src/main/com/sk/ucity/dv/admin/insp/web/InspItemController.java" line="163" bodyfile="C:/eclipse/workspace/ucity_dev/src/main/com/sk/ucity/dv/admin/insp/web/InspItemController.java" bodystart="160" bodyend="174"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Device 점검항목 List/View/Delete Controller</para><para><simplesect kind="author"><para>Chae, Su-Yeong </para></simplesect>
+<simplesect kind="version"><para>InspController.java//</para></simplesect>
+<simplesect kind="rcs"><title>Revision</title><para>1156 </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="13457">
+        <label>com.sk.ucity.common.abstracts.AbstractController</label>
+        <link refid="classcom_1_1sk_1_1ucity_1_1common_1_1abstracts_1_1_abstract_controller"/>
+        <childnode refid="13458" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13458">
+        <label>MessageSourceAware</label>
+      </node>
+      <node id="13456">
+        <label>com.sk.ucity.dv.admin.insp.web.InspItemController</label>
+        <link refid="classcom_1_1sk_1_1ucity_1_1dv_1_1admin_1_1insp_1_1web_1_1_insp_item_controller"/>
+        <childnode refid="13457" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="13460">
+        <label>com.sk.ucity.common.abstracts.AbstractController</label>
+        <link refid="classcom_1_1sk_1_1ucity_1_1common_1_1abstracts_1_1_abstract_controller"/>
+        <childnode refid="13461" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13462" relation="usage">
+          <edgelabel>configService</edgelabel>
+        </childnode>
+        <childnode refid="13463" relation="usage">
+          <edgelabel>messageSource</edgelabel>
+        </childnode>
+      </node>
+      <node id="13461">
+        <label>MessageSourceAware</label>
+      </node>
+      <node id="13464">
+        <label>Logger</label>
+      </node>
+      <node id="13459">
+        <label>com.sk.ucity.dv.admin.insp.web.InspItemController</label>
+        <link refid="classcom_1_1sk_1_1ucity_1_1dv_1_1admin_1_1insp_1_1web_1_1_insp_item_controller"/>
+        <childnode refid="13460" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13464" relation="usage">
+          <edgelabel>logger</edgelabel>
+        </childnode>
+        <childnode refid="13465" relation="usage">
+          <edgelabel>inspItemService</edgelabel>
+        </childnode>
+      </node>
+      <node id="13462">
+        <label>com.sk.ucity.cm.config.ConfigService</label>
+        <link refid="interfacecom_1_1sk_1_1ucity_1_1cm_1_1config_1_1_config_service"/>
+      </node>
+      <node id="13465">
+        <label>com.sk.ucity.dv.admin.insp.InspItemService</label>
+        <link refid="interfacecom_1_1sk_1_1ucity_1_1dv_1_1admin_1_1insp_1_1_insp_item_service"/>
+      </node>
+      <node id="13463">
+        <label>MessageSource</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/eclipse/workspace/ucity_dev/src/main/com/sk/ucity/dv/admin/insp/web/InspItemController.java" line="34" bodyfile="C:/eclipse/workspace/ucity_dev/src/main/com/sk/ucity/dv/admin/insp/web/InspItemController.java" bodystart="34" bodyend="175"/>
+    <listofallmembers>
+      <member refid="classcom_1_1sk_1_1ucity_1_1dv_1_1admin_1_1insp_1_1web_1_1_insp_item_controller_17ecd2e8365606d5f710e6f489b298bf9" prot="public" virt="non-virtual"><scope>com::sk::ucity::dv::admin::insp::web::InspItemController</scope><name>delete</name></member>
+      <member refid="classcom_1_1sk_1_1ucity_1_1common_1_1abstracts_1_1_abstract_controller_17d0b912f0b1615c560dc1eafe58bbd10" prot="public" virt="non-virtual"><scope>com::sk::ucity::dv::admin::insp::web::InspItemController</scope><name>getConfigService</name></member>
+      <member refid="classcom_1_1sk_1_1ucity_1_1dv_1_1admin_1_1insp_1_1web_1_1_insp_item_controller_1018eee3dc15cd4bc4f3d438c406c9228" prot="public" virt="non-virtual"><scope>com::sk::ucity::dv::admin::insp::web::InspItemController</scope><name>getInspItemService</name></member>
+      <member refid="classcom_1_1sk_1_1ucity_1_1common_1_1abstracts_1_1_abstract_controller_1e093012e35548885be10f39375e959fb" prot="protected" virt="non-virtual"><scope>com::sk::ucity::dv::admin::insp::web::InspItemController</scope><name>getMessage</name></member>
+      <member refid="classcom_1_1sk_1_1ucity_1_1common_1_1abstracts_1_1_abstract_controller_1045390b67fac65b64647ff71721d85f3" prot="protected" virt="non-virtual"><scope>com::sk::ucity::dv::admin::insp::web::InspItemController</scope><name>getMessage</name></member>
+      <member refid="classcom_1_1sk_1_1ucity_1_1common_1_1abstracts_1_1_abstract_controller_171b25474af712ef3c0009032dda7f069" prot="protected" virt="non-virtual"><scope>com::sk::ucity::dv::admin::insp::web::InspItemController</scope><name>getMessage</name></member>
+      <member refid="classcom_1_1sk_1_1ucity_1_1common_1_1abstracts_1_1_abstract_controller_105936dfaa6fc5fac6f3f07b49be096eb" prot="protected" virt="non-virtual"><scope>com::sk::ucity::dv::admin::insp::web::InspItemController</scope><name>getMessage</name></member>
+      <member refid="classcom_1_1sk_1_1ucity_1_1common_1_1abstracts_1_1_abstract_controller_1513a264c5f47ebb9248f831b98de7f94" prot="protected" virt="non-virtual"><scope>com::sk::ucity::dv::admin::insp::web::InspItemController</scope><name>initBinder</name></member>
+      <member refid="classcom_1_1sk_1_1ucity_1_1dv_1_1admin_1_1insp_1_1web_1_1_insp_item_controller_1c4cd26823b22495dab4606e67452f167" prot="private" virt="non-virtual"><scope>com::sk::ucity::dv::admin::insp::web::InspItemController</scope><name>inspItemService</name></member>
+      <member refid="classcom_1_1sk_1_1ucity_1_1dv_1_1admin_1_1insp_1_1web_1_1_insp_item_controller_161f4fe727d16a43b4f60ef4919418e81" prot="public" virt="non-virtual"><scope>com::sk::ucity::dv::admin::insp::web::InspItemController</scope><name>list</name></member>
+      <member refid="classcom_1_1sk_1_1ucity_1_1dv_1_1admin_1_1insp_1_1web_1_1_insp_item_controller_1585217823cc0753d0c91c5b75a0b6213" prot="private" virt="non-virtual"><scope>com::sk::ucity::dv::admin::insp::web::InspItemController</scope><name>logger</name></member>
+      <member refid="classcom_1_1sk_1_1ucity_1_1common_1_1abstracts_1_1_abstract_controller_183973e8e428565af7fbe4527ba58d5ab" prot="public" virt="non-virtual"><scope>com::sk::ucity::dv::admin::insp::web::InspItemController</scope><name>setConfigService</name></member>
+      <member refid="classcom_1_1sk_1_1ucity_1_1dv_1_1admin_1_1insp_1_1web_1_1_insp_item_controller_16a4d859f7e728cfea4271dcfb520729d" prot="public" virt="non-virtual"><scope>com::sk::ucity::dv::admin::insp::web::InspItemController</scope><name>setInspItemService</name></member>
+      <member refid="classcom_1_1sk_1_1ucity_1_1common_1_1abstracts_1_1_abstract_controller_16f789c3758e84d695d6b0053d1cd2f26" prot="public" virt="non-virtual"><scope>com::sk::ucity::dv::admin::insp::web::InspItemController</scope><name>setMessageSource</name></member>
+      <member refid="classcom_1_1sk_1_1ucity_1_1dv_1_1admin_1_1insp_1_1web_1_1_insp_item_controller_140336bed3f4b7775c42d1721f018defe" prot="public" virt="non-virtual"><scope>com::sk::ucity::dv::admin::insp::web::InspItemController</scope><name>view</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
